@@ -21,7 +21,7 @@ export default async function Home() {
     <div className="flex w-full flex-col items-center px-4 pt-8">
       <div className="text-center">
         <H1>Atlantic</H1>
-        <P>- A Pixel Gun 3D clan founded by the Viskums -</P>
+        <P>- A Pixel Gun 3D clan founded by the Viskum brothers -</P>
         <div className="flex py-8 px-8 gap-x-4">
           <div>
             <Image src={clanLogo} alt="logo" width={100} height={100} className="rounded-3xl" />

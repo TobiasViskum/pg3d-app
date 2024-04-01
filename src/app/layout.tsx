@@ -12,7 +12,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Atlanic Clan PG3D",
-  description: "Tobias' portfolio",
+  description: "This is the official website of the Atlantic clan in Pixel Gun 3D",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
