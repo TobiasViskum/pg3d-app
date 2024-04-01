@@ -1,4 +1,4 @@
-import { clanLogo } from "@/assets";
+import { clanLogo, pg3dBg1 } from "@/assets";
 import { H1 } from "@/components/h1";
 import { H2 } from "@/components/h2";
 import { H3 } from "@/components/h3";
@@ -48,9 +48,20 @@ export default async function Home() {
           <H2>Content</H2>
           <Link
             href="/pd3d-weapons"
-            className="bg-first bg-opacity-10 w-64 h-36 text-center grid place-items-center"
+            className="bg-transparent w-64 h-64 text-center grid place-items-center aspect-square relative rounded-3xl overflow-hidden shadow-xl group"
           >
-            <P className="scale-125 font-semibold">Weapons and Gadgets</P>
+            <Image
+              src={pg3dBg1}
+              alt=""
+              height={256}
+              width={256}
+              className="absolute top-0 left-0 transition-transform group-hover:scale-105 duration-500"
+            />
+            <div className="bg-background bg-opacity-80 absolute w-full h-full">
+              <P className="scale-125 font-semibold bg-background rounded-sm absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48">
+                Weapons and Gadgets
+              </P>
+            </div>
           </Link>
         </div>
       </div>
